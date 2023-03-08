@@ -1,0 +1,25 @@
+﻿.kfssBtn {
+  width: 120px;
+  height: 40px;
+  border: 2px solid !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  
+  &:hover {
+    background: none !important;
+  }
+}
+
+.kfssBtnPrimary {
+  color: #27bfc8 !important;
+  border-color: #27bfc8 !important;
+
+  &:hover {
+    color: #fff !important;
+    background-color: #27bfc8 !important;
+  }
+  
+  &:disabled {
+    color: #212529 !important;
+  }
+}
