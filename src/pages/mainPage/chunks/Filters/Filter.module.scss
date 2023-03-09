@@ -1,0 +1,18 @@
+.FiltersWrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns:repeat(3, 250px);
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 930px) {
+  .FiltersWrapper {
+    grid-template-columns:repeat(2, 250px);
+  }
+}
+@media (max-width: 593px) {
+  .FiltersWrapper {
+    grid-template-columns:repeat(1, 250px);
+  }
+}

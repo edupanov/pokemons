@@ -1,0 +1,11 @@
+.LimitSelectWrapper {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 593px) {
+  .LimitSelectWrapper {
+    width: 100%;
+  }
+}

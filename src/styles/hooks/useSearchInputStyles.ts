@@ -6,15 +6,32 @@ export const useSearchInputStyles = makeStyles({
         height:"fit-content",
         position: 'relative',
         backgroundColor: '#fff',
-        borderRadius: '10px'
+        borderRadius: '10px',
+        margin:0
     },
     inputWrapper: {
-        width: 230,
+        width: 200,
         height:37,
         position: 'relative',
         backgroundColor: '#fff',
-        borderRadius: '10px'
+        borderRadius: '10px',
+        marginBottom: 15,
+        '@media (max-width: 593px)': {
+            width: '100%'
+        }
     },
+    formInputWrapper: {
+        width: 200,
+        height:37,
+        position: 'relative',
+        backgroundColor: '#fff',
+        borderRadius: '10px',
+        marginBottom: 15,
+        '@media (max-width: 593px)': {
+            width: '100%'
+        }
+    },
+
     longInputWrapper: {
         position: 'relative',
         height:37,
@@ -220,7 +237,7 @@ export const useSearchInputStyles = makeStyles({
         fontWeight:600,
         color:'#1a1818de',
         boxShadow: '-2px 2px 22px -19px rgba(34, 60, 80, 0.16)',
-       
+
     },
     dateInput: {
         "& .MuiFormHelperText-root.Mui-error": {

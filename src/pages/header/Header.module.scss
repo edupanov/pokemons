@@ -1,0 +1,79 @@
+@import "src/styles/vars";
+
+.HeaderToolBar {
+  display: flex;
+  justify-content: space-between;
+  background: $eastern-blue;
+  padding: 0 20px;
+
+  .AppVersion {
+    color: #fff;
+    font-size: .8rem;
+    margin-top: 6px;
+  }
+
+  .LeftBar {
+    display: flex;
+    align-items: center;
+  }
+
+  .LogoWrapper {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 100px;
+    white-space: nowrap;
+
+    a {
+      color: $white-color;
+    }
+
+    img {
+      max-height: 50px;
+      width: 50px;
+      margin-right: 10px;
+      fill: #5cdbd5;
+    }
+  }
+
+  .ButtonWrapper {
+    display: flex;
+    align-items: center;
+
+    .portalManagerNameText {
+      font-size: 11px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    .nameBtn {
+      width: fit-content;
+      margin-right: 10px;
+    }
+
+    .exitBtn {
+      width: 80px;
+    }
+  }
+
+  .Fio {
+    font-size: 18px;
+    font-weight: 400;
+    color: $white-color;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+
+}
+
+.modalChangeProfile {
+  height: calc(100% - 300px);
+  overflow-y: scroll !important;
+}
+
+.modalNewFeatures {
+  height: calc(100% - 300px);
+  width: 1200px;
+}

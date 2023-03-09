@@ -1,0 +1,14 @@
+.FormControl {
+  width: 200px;
+}
+
+@media (max-width: 930px) {
+  .FormControl {
+    width: 200px;
+  }
+}
+@media (max-width: 593px) {
+  .FormControl {
+    //width: 100%;
+  }
+}

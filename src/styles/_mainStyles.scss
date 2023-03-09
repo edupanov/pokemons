@@ -6,7 +6,6 @@ body {
   font-weight: 400;
   line-height: 1.495;
   background-color: whitesmoke;
-  min-width: 1300px;
 }
 
 
@@ -45,92 +44,8 @@ p {
   padding: 3px 14px 3px 14px;
 }
 
-.Toastify__toast-container {
-  margin-top: 55px;
-
-  .Toastify__toast--error {
-    display: flex;
-    min-height: 70px;
-    align-items: flex-start;
-
-
-    .Toastify__toast-body {
-      margin-top: 0;
-    }
-
-    button {
-      align-self: flex-start;
-    }
-  }
-}
-
-.ACInputWrapper {
-  input {
-    height: 12px;
-    padding: 0 14px;
-  }
-
-  label {
-    top: -3px;
-    font-size: 16px;
-  }
-
-  label[data-shrink="true"] {
-    top: 0;
-  }
-}
-
-.ACDateInputWrapper {
-  position: relative;
-
-  input {
-    padding-top: 10px !important;
-    padding-bottom: 7px !important;
-  }
-
-  label {
-    top: -2px;
-    font-size: 16px;
-  }
-
-  label[data-shrink="true"] {
-    top: 0;
-  }
-}
-
 .MuiOutlinedInput-adornedEnd {
   padding-right: 0 !important;
-}
-
-.inovua-react-toolkit-load-mask.inovua-react-toolkit-load-mask--theme-default-light
-.inovua-react-toolkit-load-mask__loader--svg
-.inovua-react-toolkit-load-mask__loader-spinner {
-  border-radius: 50%;
-  background-image: conic-gradient(from 90deg, #e3e3e3, #27bfc8 .99turn, #e3e3e3);
-  object-fit: contain;
-  z-index: 9000;
-}
-
-.table-grid-wrapper {
-  position: relative;
-  padding-top: 37px;
-  transition: 0.3s;
-
-  .expand {
-    width: 60px;
-    height: 30px;
-  }
-}
-
-.react-grid-wrapper {
-  width: 100%;
-  height: 100%;
-  padding: 0 24px;
-
-  &.fullScreen {
-    height: 100%;
-    padding: 0 24px;
-  }
 }
 
 .download-link {
@@ -139,147 +54,11 @@ p {
   }
 }
 
-.grid-header-row-height {
-  min-height: 25px;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
 
-.resizeGridHeader {
-  &.InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__cell:not(.InovuaReactDataGrid__cell--no-padding),
-  .InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__column-header__content,
-  .InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__footer-row-cell,
-  .InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__header-group__title,
-  .InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__locked-row-cell,
-  .InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__nested-cell,
-  .InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__nested-group-cell {
-    padding: 1px 8px;
-  }
-}
 
 .MuiButton-root {
   min-width: 35px !important;
 }
 
-.InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__column-header__menu-tool:first-child {
-  margin-right: 0 !important;
-}
-
-.remove-sort-icon-first-column {
-  .InovuaReactDataGrid__header-group-cells {
-    .InovuaReactDataGrid__column-header__resize-wrapper--first-in-section {
-      .InovuaReactDataGrid__column-header__menu-tool {
-        display: none;
-      }
-    }
-  }
-}
-
-.grid-white-space {
-  .InovuaReactDataGrid__cell__content {
-    white-space: normal;
-  }
-}
-
-.rowThreeWrapper {
-  padding: 0 !important;
-  align-self: flex-start !important;
-  //height: initial !important;
-  .InovuaReactDataGrid__cell__content {
-    align-self: flex-start !important;
-
-    input {
-      width: -webkit-fill-available;
-    }
-  }
-
-  .WrapperThreeCellProperty {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  .cellThreeProperty {
-    height: 30px;
-    border-bottom: 1px solid #e4e3e2;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    line-height: 30px;
-    padding-left: 8px;
-
-  }
-
-  .cellThreePropertyBorderNone {
-    height: 30px;
-
-    padding-left: 8px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    line-height: 30px;
-  }
-
-  .cellThreePropertyBig {
-    height: 60px;
-    padding-left: 8px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    line-height: 60px;
-  }
-}
-
-.global-row-error-color {
-  color: red;
-}
-
-.global-row-success-color {
-  color: green;
-}
-
-.cellPropertyBig {
-  height: 60px;
-  padding-left: 8px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  line-height: 60px;
-}
-
-.InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__column-header,
-.InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__header-group,
-.InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid__header-wrapper {
-  background: #27bfc8 !important;
-  color: #FFFFFF;
-}
-
-.InovuaReactDataGrid__row--active:before {
-  border: none !important;
-}
-
-.InovuaReactDataGrid--theme-default-light .InovuaReactDataGrid--focused .InovuaReactDataGrid__row--active .InovuaReactDataGrid__row--no-locked-start:before {
-  border: none !important;
-  outline: none !important;
-}
-
-.paging-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2px 25px 6px 25px;
-}
-
-.grid-header-row-height {
-  min-height: 22px;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.in-prev-month,
-.in-next-month {
-  background-color: rgba(100, 100,100, .1);
-}
 
 

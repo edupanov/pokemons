@@ -1,0 +1,61 @@
+﻿@mixin modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  overflow: hidden;
+  z-index: 1000;
+  min-width: 700px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+
+  .ButtonRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+  
+  .ButtonRowWithoutAction {
+    justify-content: flex-end;
+  }
+}
+
+@mixin overlay {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.ModalWrapper {
+  @include modal;
+}
+
+.ModalNestedWrapper {
+  @include modal;
+  min-height: 0;
+  height: fit-content;
+  max-width: fit-content;
+}
+
+.ModalOverlay {
+  @include overlay;
+}
+
+.ModalTransparentOverlay {
+  @include overlay;
+  background-color: transparent;
+}
+

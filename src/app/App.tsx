@@ -3,13 +3,17 @@ import { BrowserRouter } from 'react-router-dom';
 import '../styles/base.scss';
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {fas} from "@fortawesome/free-solid-svg-icons";
+import Layout from '../layout/Layout';
+import routes from "../router/router";
 
 // @ts-ignore
 library.add(fas)
 
 const App = () => (
     <BrowserRouter>
-        123tgd
+        <Layout>
+            {routes}
+        </Layout>
     </BrowserRouter>
 );
 

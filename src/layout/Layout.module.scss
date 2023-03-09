@@ -1,0 +1,28 @@
+.layoutWrapper {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  .mainBlockContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    //padding-top: 8px;
+  }
+
+  p {
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    color: #27bfc8;
+  }
+
+  .container {
+    flex-grow: 1;
+    display: flex;
+  }
+}
+
+
