@@ -6,8 +6,6 @@
   padding: 25px;
   overflow: hidden;
   z-index: 1000;
-  min-width: 700px;
-  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,7 +20,7 @@
     align-self: flex-end;
     margin-top: 10px;
   }
-  
+
   .ButtonRowWithoutAction {
     justify-content: flex-end;
   }
@@ -41,6 +39,17 @@
 
 .ModalWrapper {
   @include modal;
+}
+@media (max-width: 593px) {
+  .ModalWrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .ModalWrapper {
+    width: 100%;
+  }
 }
 
 .ModalNestedWrapper {

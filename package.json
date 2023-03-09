@@ -1,6 +1,6 @@
 {
   "name": "pokemons",
-  "homepage": "https://edupanov.github.io/pokemons",
+  "homepage": "https://edupanov.github.io/pokemons/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
